@@ -3,7 +3,7 @@ name: Java ZAP Scan
 on:
   push:
     branches:
-      - CodeQL-Analysis  # Trigger on push to the master branch
+      - Snyk-Security-Scan  # Trigger on push to the master branch
 
 jobs:
   snyk_scan:
