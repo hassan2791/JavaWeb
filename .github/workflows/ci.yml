@@ -3,7 +3,7 @@ name: Java ZAP Scan
 on:
   push:
     branches:
-      - Snyk-Security-Scan  # Trigger on push to the master branch
+      - Snyk-Security-Scan  # Trigger onon push to the master branch
 
 jobs:
   snyk-scan:
