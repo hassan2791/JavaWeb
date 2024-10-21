@@ -37,7 +37,7 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
 
       - name: Build with Maven (with Debugging)
-        run: mvn clean install package-P production -X  #  Enable Maven's debug output (-X)
+        run: mvn clean install package -P production -X  #  Enable Maven's debug output (-X)
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4  # Use the latest version
