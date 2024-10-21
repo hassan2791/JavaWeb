@@ -48,4 +48,4 @@ jobs:
         uses: actions/upload-artifact@v4  # Use the latest version
         with:
           name: maven-build
-          path: target/*.jar  # Path to the JAR file in the target/ folder
+          path: target/*.war  # Path to the JAR file in the target/ folder
