@@ -16,7 +16,7 @@ jobs:
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v2
         with:
-          languages: 'java,swift,kotlin'
+          languages: 'java,kotlin'
 
       - name: Build
         run: |
