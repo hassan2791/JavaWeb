@@ -13,10 +13,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up CodeQL
-        uses: github/codeql-action/setup@v2
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
         with:
-          languages: 'javascript,java,swift,kotlin' # Specify the languages you want to analyze
+          languages: 'java,swift,kotlin' # Specify the languages you want to analyze
+
+      - name: Build
+        run: |
+          # Insert your build commands here if necessary
+          echo "Building the project"
 
       - name: Run CodeQL Analysis
         uses: github/codeql-action/analyze@v2
